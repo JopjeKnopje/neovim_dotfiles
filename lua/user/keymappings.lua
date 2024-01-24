@@ -11,6 +11,9 @@ keymap("", "<leader>r", ":wa | :!make run <CR>", opts)
 -- keymap("", "<leader>t", ":wa | :sp | :res 10 | :term norminette % <CR>", opts)
 
 
+-- open man page in vim
+keymap('n', 'mm', ':Man<CR>', opts)
+
 -- clear highlighting
 keymap("", "<Esc><Esc>", ":let @/=''<CR>", opts)
 

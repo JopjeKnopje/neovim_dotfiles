@@ -13,10 +13,15 @@ lsp.configure('arduino_language_server', {
 		"-cli", "/home/joppe/.local/bin/arduino-cli",
 		"-fqbn", MY_FQBN
 	}
-
-
 })
 
 
 lsp.setup()
+
+
+-- disable the fucking virtual_text
+
+vim.diagnostic.config({
+	virtual_text = false,
+})
 
